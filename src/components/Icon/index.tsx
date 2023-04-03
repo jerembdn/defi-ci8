@@ -22,7 +22,7 @@ const Icon = styled(({ name, fill, className, ...rest }: Props) => {
   const finalClassName = `${finalName} ${className || ""}`;
   return <i {...rest} className={finalClassName} />;
 })<Props>`
-  font-size: ${({ size, theme }) => (size ? `${size}px` : theme.size.h40)};
+  font-size: ${({ size, theme }) => (size ? `${size}px` : theme.size.normal)};
   ${({ color }) => color && `color: ${color}`};
   vertical-align: ${({ align }) => {
     switch (align) {

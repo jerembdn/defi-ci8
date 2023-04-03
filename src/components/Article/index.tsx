@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 import Badge from "../Badge";
 import Image from "../Image";
 
@@ -13,7 +13,6 @@ type Props = {
   subtitle?: string;
   description: string | React.ReactNode;
   reversed?: boolean;
-  test: DefaultTheme;
 };
 
 const Article: React.FC<Props> = ({
