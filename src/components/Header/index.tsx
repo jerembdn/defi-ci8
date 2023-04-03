@@ -1,0 +1,108 @@
+import React from "react";
+import styled from "styled-components";
+import Button from "../Button";
+import Image from "../Image";
+import Link from "../Link";
+
+type NavLink = {
+  label: string;
+  href: string;
+};
+
+type Props = {
+  navLinks: NavLink[];
+};
+
+const Header: React.FC<Props> = ({ navLinks }: Props) => {
+  const handleParticipate = () => {
+    window.open("https://forms.gle/gi9XtgSm1aXca47w7", "_blank");
+  };
+
+  return (
+    <Container>
+      <Brand>
+        <Logo
+          src="/static/images/logo/logo.png"
+          alt={
+            "Logo de la 8ème compagnie - 46ème promotion aux couleurs de la lutte contre le cancer du sein"
+          }
+        />
+      </Brand>
+
+      <LaptopContainer>
+        <Navigation>
+          <NavLinks>
+            {navLinks.map((link: NavLink, index: number) => (
+              <NavItem key={index}>
+                <Link href={link.href}>{link.label}</Link>
+              </NavItem>
+            ))}
+          </NavLinks>
+        </Navigation>
+
+        <Actions>
+          <Button onClick={handleParticipate}>
+            {"Participer à la course"}
+          </Button>
+        </Actions>
+      </LaptopContainer>
+    </Container>
+  );
+};
+
+const Container = styled.header`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+`;
+
+const Brand = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+`;
+
+const Logo = styled(Image)`
+  width: 60px;
+  height: 60px;
+`;
+
+const LaptopContainer = styled.div`
+  display: none;
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+`;
+
+const Navigation = styled.nav`
+  margin-left: 60px;
+`;
+
+const NavLinks = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+`;
+
+const NavItem = styled.li``;
+
+const Actions = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+`;
+
+export type { NavLink };
+export default Header;
