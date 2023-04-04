@@ -150,7 +150,7 @@ const GlobalStyle = createGlobalStyle`
 
     html,
     body {
-        scrollbar-color: rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3);
+        scrollbar-color: rgba(245, 6, 123, 0.6) rgba(245, 6, 123, 0.3);
     }
 
     ::-webkit-scrollbar {
@@ -161,11 +161,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(245, 6, 123, 0.3);
     }
 
     ::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(245, 6, 123, 0.6);
         height: 10px;
     }
 
