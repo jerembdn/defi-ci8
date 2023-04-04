@@ -100,6 +100,7 @@ const Thumbnail = styled(Image)`
   max-height: 200px;
   width: 100%;
   object-fit: cover;
+  outline: 1px solid #e5e5e5;
   border-radius: 10px;
 
   @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
