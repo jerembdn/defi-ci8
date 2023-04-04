@@ -6,9 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "docker:build": "docker build . -t tonightpass-website",
-    "docker:run": "docker run -p 3000:3000 tonightpass-website"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-hook/media-query": "^1.1.1",

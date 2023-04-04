@@ -25,7 +25,7 @@ RUN adduser -S defi-ci8-website -u 1001
 # You only need to copy next.config.js if you are NOT using the default configuration
 # COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
-COPY --from=builder --chown=tonightpass-website:nodejs /app/.next ./.next
+COPY --from=builder --chown=defi-ci8-website:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY ./next.config.js /app/next.config.js
