@@ -1,23 +1,17 @@
 import Button from "@/components/Button";
 import useBreakpoint from "@/hooks/useBreakpoint";
-import { useRouter } from "next/router";
 import React from "react";
 import styled from "styled-components";
 
 const HomePageHero: React.FC = () => {
   const { isMobile } = useBreakpoint();
-  const router = useRouter();
 
   const handleDiscover = () => {
-    router.push("/#event-description", undefined, {
-      scroll: false,
-    });
-    window.setTimeout(() => {
-      window.scrollTo({
-        top: window.pageYOffset - 50,
-        behavior: "smooth",
-      });
-    }, 100);
+    const eventDescription = document.getElementById("event-description");
+
+    if (eventDescription) {
+      eventDescription.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const handleParticipate = () => {
