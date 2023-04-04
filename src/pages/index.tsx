@@ -8,9 +8,17 @@ import HomePageOrganisationDetails from "@/components/HomePage/OrganisationDetai
 import HomePagePlanning from "@/components/HomePage/Planning";
 import Page from "@/components/Page";
 import { NextPage } from "next";
+
+import Button from "@/components/Button";
+import styled from "styled-components";
+
 import React from "react";
 
 const HomePage: NextPage = () => {
+  const handleTopPage = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <Page
       head={{
@@ -33,8 +41,22 @@ const HomePage: NextPage = () => {
       <HomePageGoodiesSection />
 
       <HomePageJackpotSection />
+
+      <ActionButton onClick={handleTopPage}>
+        <i className="ri-arrow-up-line"></i>
+      </ActionButton>
     </Page>
   );
 };
+
+const ActionButton = styled(Button)`
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
+    width: fit-content;
+  }
+`;
 
 export default HomePage;
