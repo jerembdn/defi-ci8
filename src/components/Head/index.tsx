@@ -54,16 +54,11 @@ const Head: React.FC<HeadProps> = ({
           },
         ],
       }}
-      twitter={{
-        handle: "@tonightpass",
-        site: "@tonightpass",
-        cardType: "summary_large_image",
-      }}
       languageAlternates={languageAlternates}
       additionalMetaTags={[
         {
           property: "keywords",
-          content: `tonightpass, tonight, pass${
+          content: `29 avril 2023, parcours, stands, goodies, defi, carpediem21, cancer, sein, lutte, course, orientation, ci8, compagnie, gendarmerie, école, dijon, instruction, social, défi${
             keywords ? `, ${keywords.join(", ").toLowerCase()}` : ""
           }`,
         },

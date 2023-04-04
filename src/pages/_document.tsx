@@ -60,6 +60,16 @@ export default class MyDocument extends Document {
             href="/static/images/favicon/apple-touch-icon.png"
           />
           <link
+            rel="android-chrome"
+            sizes="192x192"
+            href="/static/images/favicon/android-chrome-192x192.png"
+          />
+          <link
+            rel="android-chrome"
+            sizes="512x512"
+            href="/static/images/favicon/android-chrome-512x512.png"
+          />
+          <link
             rel="icon"
             type="image/png"
             sizes="32x32"
