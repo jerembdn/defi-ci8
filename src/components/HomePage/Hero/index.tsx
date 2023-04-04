@@ -45,6 +45,7 @@ const Container = styled.section`
 
   @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
     margin: 100px 0 0 0;
+    padding-top: 105px;
   }
 `;
 

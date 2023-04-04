@@ -18,8 +18,20 @@ const Header: React.FC<Props> = ({ navLinks }: Props) => {
     window.open("https://forms.gle/gi9XtgSm1aXca47w7", "_blank");
   };
 
+  const [isSticky, setIsSticky] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 80);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Container>
+    <Container isSticky={isSticky}>
       <Brand>
         <Logo
           src="/static/images/logo/logo.png"
@@ -50,12 +62,25 @@ const Header: React.FC<Props> = ({ navLinks }: Props) => {
   );
 };
 
-const Container = styled.header`
+const Container = styled.header<{ isSticky: boolean }>`
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 45px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
+    position: fixed;
+    top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 999;
+    padding-top: ${({ isSticky }) => (isSticky ? "10px" : "45px")};
+    padding-bottom: ${({ isSticky }) => (isSticky ? "10px" : "0px")};
+    transition: all 0.3s ease-in-out;
+    background-color: ${({ theme }) => theme.colors.background.primary};
+    backdrop-filter: blur(5px);
+  }
 `;
 
 const Brand = styled.div`
