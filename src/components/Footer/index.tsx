@@ -32,13 +32,17 @@ const Footer: React.FC = () => {
         <Separator />
 
         <Social>
-          <FooterLink href={"https://www.facebook.com/egdijon"}>
+          <FooterLink
+            href={"https://www.facebook.com/profile.php?id=100090906344713"}
+          >
             {"Retrouvez nous sur Facebook"}
           </FooterLink>
 
           <SocialList>
             <SocialItem>
-              <FooterLink href={"https://www.facebook.com/egdijon"}>
+              <FooterLink
+                href={"https://www.facebook.com/profile.php?id=100090906344713"}
+              >
                 <FooterIcon name={"facebook"} />
               </FooterLink>
             </SocialItem>

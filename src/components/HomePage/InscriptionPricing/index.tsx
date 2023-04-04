@@ -17,10 +17,10 @@ const HomePageInscriptionPricing: React.FC = () => {
         <Description>
           Les inscriptions se font directement sur le site internet. Un T-shirt
           à l’effigie du défi social ainsi que le repas du midi (saucisse ou
-          merguez + frites + boisson) vous seront fournis. Vous devez respecter
-          3 conditions pour vous inscrire qui dès lors seront respectées, un
-          numéro de groupe de vous sera attribué sur l’adresse électronique
-          renseignée dans le dossier d’inscription.
+          merguez + frites + boisson) vous seront fournis. 2 conditions sont à
+          respecter pour que l’inscription soit valide. À l’issue, un numéro de
+          groupe vous sera attribué sur l’adresse électronique renseignée dans
+          le dossier d’inscription.
           <br />
           <br />
           Lors de votre arrivée sur le lieu du défi, vous récupérerez auprès de
@@ -28,7 +28,7 @@ const HomePageInscriptionPricing: React.FC = () => {
           ainsi que les coupons pour vos repas.
           <br />
           <br />
-          Voici les 3 conditions pour vous inscrire :
+          Voici les 2 conditions pour vous inscrire :
         </Description>
       </Content>
 
