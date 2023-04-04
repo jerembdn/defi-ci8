@@ -15,6 +15,8 @@ const HomePage: NextPage = () => {
     <Page
       head={{
         title: "Courez pour l’espoir d’une vie sans cancer du sein",
+        description:
+          "Événement ouvert à tout le monde qui se déroulera le samedi 29 avril 2023 sur le plateau de Chenôve (21300) avec différentes courses d’orientations élaborées par LE CLUB DE CO de la ville de Chenôve, pour lutter contre le cancer du sein.",
       }}
     >
       <HomePageHero />
