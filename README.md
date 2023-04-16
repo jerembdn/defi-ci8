@@ -8,9 +8,9 @@
       Défi Compagnie d'Instruction d'école de Gendarmerie de Dijon
     </h1>
     <h3 align="center">
-      Courez pour l’espoir d’une vie sans cancer du sein.
+      Courez & marchez pour l’espoir d’une vie sans cancer du sein.
       <br />
-      Événement ouvert à tout le monde qui se déroulera le samedi 29 avril 2023 sur le plateau de Chenôve (21300) avec différentes courses d’orientations élaborées par LE CLUB DE CO de la ville de Chenôve, pour lutter contre le cancer du sein.
+      Événement ouvert à tout le monde qui se déroulera le samedi 29 avril 2023 sur le plateau de Chenôve (21300) avec différentes courses/marches d’orientations élaborées par LE CLUB DE CO de la ville de Chenôve, pour lutter contre le cancer du sein.
     </h2>
   </a>
 </p>
@@ -42,7 +42,7 @@
 
 ## Description
 
-Développement d'une application permettant le relai et l'inscription pour une course d'orientation au profit de la lutte contre le cancer du sein (CARPEDIEM21)
+Développement d'une application permettant le relai et l'inscription pour une course/marche d'orientation au profit de la lutte contre le cancer du sein (CARPEDIEM21)
 
 ## Community
 
