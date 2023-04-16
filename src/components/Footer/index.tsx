@@ -6,6 +6,10 @@ import Image from "../Image";
 import Link from "../Link";
 
 const Footer: React.FC = () => {
+  const handleTopPage = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const handleParticipate = () => {
     window.open("https://forms.gle/gi9XtgSm1aXca47w7", "_blank");
   };
@@ -15,6 +19,7 @@ const Footer: React.FC = () => {
       <Container>
         <Header>
           <Logo
+            onClick={handleTopPage}
             src="/static/images/logo/logo.png"
             alt={
               "Logo de la 8ème compagnie - 46ème promotion aux couleurs de la lutte contre le cancer du sein"

@@ -14,6 +14,10 @@ type Props = {
 };
 
 const Header: React.FC<Props> = ({ navLinks }: Props) => {
+  const handleTopPage = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const handleParticipate = () => {
     window.open("https://forms.gle/gi9XtgSm1aXca47w7", "_blank");
   };
@@ -31,9 +35,10 @@ const Header: React.FC<Props> = ({ navLinks }: Props) => {
   }, []);
 
   return (
-    <Container isSticky={isSticky}>
+    <Container isSticky={isSticky} id="home">
       <Brand>
         <Logo
+          onClick={handleTopPage}
           src="/static/images/logo/logo.png"
           alt={
             "Logo de la 8ème compagnie - 46ème promotion aux couleurs de la lutte contre le cancer du sein"
@@ -80,6 +85,7 @@ const Container = styled.header<{ isSticky: boolean }>`
     transition: all 0.3s ease-in-out;
     background-color: ${({ theme }) => theme.colors.background.primary};
     backdrop-filter: blur(5px);
+    outline: 1px solid ${({ theme }) => theme.colors.background.primary};
   }
 `;
 
