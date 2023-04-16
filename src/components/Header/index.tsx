@@ -22,13 +22,15 @@ const Header: React.FC<Props> = ({ navLinks }: Props) => {
     window.open("https://forms.gle/gi9XtgSm1aXca47w7", "_blank");
   };
 
-  const [isSticky, setIsSticky] = React.useState(false);
+  const [isSticky, setIsSticky] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 80);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

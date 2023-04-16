@@ -4,6 +4,7 @@ interface Props {
   alt: string;
   width?: number;
   height?: number;
+  onClick?: () => void;
   className?: string;
 }
 
@@ -12,6 +13,7 @@ const Image: React.FC<Props> = ({
   width,
   height,
   alt,
+  onClick,
   className,
   ...rest
 }: Props) => {
@@ -21,6 +23,7 @@ const Image: React.FC<Props> = ({
       width={width}
       height={height}
       alt={alt}
+      onClick={onClick}
       className={className}
       loading={"lazy"}
       draggable={false}
