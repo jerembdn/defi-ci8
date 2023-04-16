@@ -22,8 +22,8 @@ const HomePageActivities: React.FC = () => {
               <li>Stands de nourritures</li>
             </UnordonnedList>
             <br />
-            A l’issue des courses, vous retrouverez des stands d’informations
-            tenus par des professionnels sur des thèmes variés :
+            A l’issue des courses/marches, vous retrouverez des stands
+            d’informations tenus par des professionnels sur des thèmes variés :
             <br />
             <UnordonnedList>
               <li>Lutte contre le cancer du sein</li>

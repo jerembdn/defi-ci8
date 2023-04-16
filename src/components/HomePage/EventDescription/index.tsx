@@ -24,7 +24,7 @@ const HomePageEventDescription: React.FC = () => {
             "Les fonds récoltés lors de cette journée seront reversés à l’association marraine CARPEDIEM21."
           }
           description={
-            "Cet événement est ouvert à tout le monde. Il se déroulera le samedi 29 avril 2023 sur le plateau de Chenôve (21300) avec différentes courses d’orientations élaborées par LE CLUB DE CO de la ville de Chenôve, que l’on remercie infiniment pour leur aide au bon déroulement du défi."
+            "Cet événement est ouvert à tout le monde. Il se déroulera le samedi 29 avril 2023 sur le plateau de Chenôve (21300) avec différentes courses/marches d’orientations élaborées par LE CLUB DE CO de la ville de Chenôve, que l’on remercie infiniment pour leur aide au bon déroulement du défi."
           }
         />
       </Content>

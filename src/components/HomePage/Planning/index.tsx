@@ -25,7 +25,7 @@ const HomePagePlanning: React.FC = () => {
 
           <Card>
             <CardTitle>09:30</CardTitle>
-            <CardSubtlte>Départ de la 1ère course</CardSubtlte>
+            <CardSubtlte>Départ de la 1ère course/marche</CardSubtlte>
           </Card>
 
           <Card>

@@ -21,7 +21,7 @@ const HomePageHero: React.FC = () => {
   return (
     <Container>
       <Title>
-        Courez pour l’espoir d’une vie
+        Courez et marchez pour l’espoir d’une vie
         {!isMobile ? <br /> : " "}
         sans cancer du sein
       </Title>
