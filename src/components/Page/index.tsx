@@ -13,7 +13,7 @@ const Page: React.FC<Props> = ({ head, children }: Props) => {
   const navLinks: NavLink[] = [
     {
       label: "Accueil",
-      href: "/",
+      href: "/#home",
     },
     {
       label: "Planning",
