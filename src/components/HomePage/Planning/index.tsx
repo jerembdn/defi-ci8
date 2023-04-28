@@ -18,7 +18,7 @@ const HomePagePlanning: React.FC = () => {
       <Content>
         <Cards>
           <Card>
-            <CardTitle>08:00</CardTitle>
+            <CardTitle>09:00</CardTitle>
             <CardSubtlte>Ouverture du site</CardSubtlte>
             <CardContent>Récupération des t-shirts & coupons repas</CardContent>
           </Card>
