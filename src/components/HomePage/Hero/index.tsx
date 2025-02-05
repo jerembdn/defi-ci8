@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import useBreakpoint from "@/hooks/useBreakpoint";
-import React from "react";
+import type React from "react";
 import styled from "styled-components";
 
 const HomePageHero: React.FC = () => {
@@ -34,18 +34,19 @@ const HomePageHero: React.FC = () => {
         <Button mode={"outline"} onClick={handleDiscover}>
           Découvrir le défi
         </Button>
-        <Button onClick={handleParticipate}>Participer à la course</Button>
+        <Button onClick={handleParticipate} disabled>
+          Participer à la course
+        </Button>
       </HeroActions>
     </Container>
   );
 };
 
 const Container = styled.section`
-  margin: 35px 30px 0 30px;
+  margin-top: 10px;
 
   @media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
-    margin: 100px 0 0 0;
-    padding-top: 105px;
+    margin: 40px;
   }
 `;
 

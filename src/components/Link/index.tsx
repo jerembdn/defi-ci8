@@ -1,4 +1,5 @@
-import NextLink, { LinkProps } from "next/link";
+import NextLink, { type LinkProps } from "next/link";
+import Icon from "../Icon";
 
 interface Props extends LinkProps {
   className?: string;
@@ -44,6 +45,8 @@ const Link: React.FC<Props> = ({
           {...rest}
         >
           {children}
+
+          <Icon name={"arrow-right-up"} />
         </a>
       );
     }

@@ -1,6 +1,6 @@
 import Article from "@/components/Article";
 import Button from "@/components/Button";
-import React from "react";
+import type React from "react";
 import styled from "styled-components";
 
 const HomePageJackpotSection: React.FC = () => {
@@ -34,7 +34,7 @@ const HomePageJackpotSection: React.FC = () => {
         reversed={true}
       />
 
-      <ActionButton onClick={handleJackpot}>
+      <ActionButton onClick={handleJackpot} disabled>
         {"Me rediriger vers la cagnotte Lydia"}
       </ActionButton>
     </Container>

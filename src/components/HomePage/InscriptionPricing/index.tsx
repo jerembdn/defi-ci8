@@ -1,7 +1,7 @@
 import Badge from "@/components/Badge";
 import Button from "@/components/Button";
 import Image from "@/components/Image";
-import React from "react";
+import type React from "react";
 import styled from "styled-components";
 
 const HomePageInscriptionPricing: React.FC = () => {
@@ -61,7 +61,7 @@ const HomePageInscriptionPricing: React.FC = () => {
         </ThumbnailContainer>
       </Instructions>
 
-      <JoinButton onClick={handleParticipate}>
+      <JoinButton onClick={handleParticipate} disabled>
         {"S’inscrire pour la course d’orientation"}
       </JoinButton>
     </Container>

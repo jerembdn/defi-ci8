@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import styled from "styled-components";
 import Button from "../Button";
 import Icon from "../Icon";
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
 
           <CTA>
             <Text>Prêt(e) à relever le défi ?</Text>
-            <ActionButton onClick={handleParticipate}>
+            <ActionButton onClick={handleParticipate} disabled>
               {"Participer à la course"}
             </ActionButton>
           </CTA>

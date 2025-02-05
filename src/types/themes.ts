@@ -2,6 +2,7 @@ export type Theme = {
   id: number;
   colors: {
     primary: string;
+    warning: string;
 
     background: {
       primary: string;

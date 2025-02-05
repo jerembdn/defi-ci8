@@ -60,7 +60,7 @@ const Header: React.FC<Props> = ({ navLinks }: Props) => {
         </Navigation>
 
         <Actions>
-          <Button onClick={handleParticipate}>
+          <Button onClick={handleParticipate} disabled>
             {"Participer à la course"}
           </Button>
         </Actions>

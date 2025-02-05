@@ -1,10 +1,11 @@
 import { createColor } from "@/utils/createColor";
-import { Theme } from "@/types/themes";
+import type { Theme } from "@/types/themes";
 
 const light: Theme = {
   id: 0,
   colors: {
     primary: createColor(245, 6, 123),
+    warning: createColor(255, 204, 0),
     background: {
       primary: createColor(255, 255, 255),
       secondary: createColor(246, 6, 123, 0.2),

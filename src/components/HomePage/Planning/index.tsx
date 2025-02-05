@@ -1,6 +1,6 @@
 import Badge from "@/components/Badge";
 import Button from "@/components/Button";
-import React from "react";
+import type React from "react";
 import styled from "styled-components";
 
 const HomePagePlanning: React.FC = () => {
@@ -34,7 +34,7 @@ const HomePagePlanning: React.FC = () => {
           </Card>
         </Cards>
 
-        <ActionButton onClick={handleParticipate}>
+        <ActionButton onClick={handleParticipate} disabled>
           {"S’inscrire pour la course d’orientation"}
         </ActionButton>
       </Content>

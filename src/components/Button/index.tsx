@@ -1,10 +1,11 @@
-import React from "react";
+import type React from "react";
 import styled from "styled-components";
 
 type Props = {
   mode?: "primary" | "outline";
   onClick?: () => void;
   children: React.ReactNode;
+  disabled?: boolean;
   className?: string;
 };
 
@@ -12,6 +13,7 @@ const Button: React.FC<Props> = ({
   mode = "primary",
   onClick,
   children,
+  disabled = false,
   className,
 }: Props) => {
   const handleClick = () => {
@@ -21,7 +23,12 @@ const Button: React.FC<Props> = ({
   };
 
   return (
-    <Container mode={mode} onClick={handleClick} className={className}>
+    <Container
+      mode={mode}
+      onClick={handleClick}
+      className={className}
+      disabled={disabled}
+    >
       {children}
     </Container>
   );
@@ -67,6 +74,12 @@ const Container = styled.button<Partial<Props>>`
         filter: brightness(0.9);
       `;
     }}
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: ${({ theme }) => theme.colors.border.button};
+    color: ${({ theme }) => theme.colors.text.secondary};
   }
 `;
 
